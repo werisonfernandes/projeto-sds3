@@ -1,6 +1,7 @@
 import { Seller } from './seller';
 
 export type Sale = {
+    id: number;
     visited: number;
     deals: number;
     amount: number;
@@ -10,14 +11,14 @@ export type Sale = {
 
 export type SalePage = {
     content: Sale[];
-    last: boolean,
-    totalPages: number,
-    totalElements: number,
-    first: boolean,
-    size: number,
-    number: number,
-    numberOfElements: number,
-    empty: boolean
+    last: boolean;
+    totalPages: number;
+    totalElements: number;
+    first: boolean;
+    size: number;
+    number: number;
+    numberOfElements: number;
+    empty: boolean;
 }
 
 export type SaleSum = {
