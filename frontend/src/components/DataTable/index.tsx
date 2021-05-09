@@ -6,6 +6,9 @@ import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/request";
 
 const DataTable = () => {
+    console.log('PROCESS ENV: ', process.env.REACT_APP_BACKEND_URL)
+    console.log('BASE_URL: ', BASE_URL)
+
     const [activePage, setActivePage] = useState<number>(0);
 
     const [page, setPage] = useState<SalePage>({
